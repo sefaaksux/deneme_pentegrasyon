@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog, faBell } from '@fortawesome/free-solid-svg-icons';
-import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
+import { faCircleHalfStroke,faUser,faRotateRight } from '@fortawesome/free-solid-svg-icons';
 
 import "./Navbar.css" 
 
@@ -15,19 +15,27 @@ const Navbar = (props) => {
                     <a href="#"> <img src="images/PentLogo.png" alt="Pentegrasyon Logo"></img> </a> 
             </div>
             <div className="nav-item">
-                    <p>🍎 Samba Cafe: Tum Şubeler</p>
+                    <p>🍎 Samba Cafe: Tum Şubeler</p> 
+                    
                     <ul>    
+                        
+                    
                          <li>
                             <a href="#"><FontAwesomeIcon icon={faCircleHalfStroke} /></a>
                         </li>
 
-                        <li>
+                        <li id="nav-item-text">
                             <a href="#">Bildirimler</a>
                         </li>
                        
-                        <li>
+                        <li id="nav-item-text">
                             <a href="#">Ayarlar</a>
                         </li>
+
+                        <li>
+                            <a href="#"><FontAwesomeIcon icon={faUser} /></a>
+                        </li>
+                        
 
                         
                     </ul>

@@ -1,17 +1,19 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBusinessTime, faKey } from '@fortawesome/free-solid-svg-icons';
+import { faBusinessTime, faKey,faTruck,faBriefcase } from '@fortawesome/free-solid-svg-icons';
+
+import "./Sidebar.css" 
 
 const Sidebar = (props) => {
     return (
-        <div>  
+        
             <div className="sidebar">
                 <ul>                 
                     <li>
                         <span>Temel İşlemleri</span>
                         <hr />
                         <button className="sidebar-button">
-                            <FontAwesomeIcon icon={faBusinessTime} /> Şirketler
+                            <FontAwesomeIcon icon={faBusinessTime} />Bayi İşlemleri
                         </button>
                     </li>
                     <li>
@@ -23,7 +25,18 @@ const Sidebar = (props) => {
                         <span>Kullanıcı İşlemleri</span>
                         <hr />
                         <button className="sidebar-button">
-                            <FontAwesomeIcon icon={faKey} /> Kullanıcı
+                        <FontAwesomeIcon icon={faTruck} />Kullanıcı
+                        </button>
+                    </li>
+                    <li>
+                        <button className="sidebar-button">
+                            <FontAwesomeIcon icon={faKey} /> Lisanslar
+                        </button>
+                    </li>
+                    <li>
+                        
+                        <button className="sidebar-button">
+                        <FontAwesomeIcon icon={faBriefcase} />Kullanıcı
                         </button>
                     </li>
                     <li>
@@ -35,7 +48,7 @@ const Sidebar = (props) => {
                         <span>Kullanıcı İşlemleri</span>
                         <hr />
                         <button className="sidebar-button">
-                            <FontAwesomeIcon icon={faKey} /> Kullanıcı
+                            <FontAwesomeIcon icon={faBriefcase} /> Kullanıcı
                         </button>
                     </li>
                     <li>
@@ -43,13 +56,7 @@ const Sidebar = (props) => {
                             <FontAwesomeIcon icon={faKey} /> Lisanslar
                         </button>
                     </li>
-                    <li>
-                        <span>Kullanıcı İşlemleri</span>
-                        <hr />
-                        <button className="sidebar-button">
-                            <FontAwesomeIcon icon={faKey} /> Kullanıcı
-                        </button>
-                    </li>
+                    
                     <li>
                         <button className="sidebar-button">
                             <FontAwesomeIcon icon={faKey} /> Lisanslar
@@ -83,11 +90,26 @@ const Sidebar = (props) => {
                     <li>
                         <button className="sidebar-button">
                             <FontAwesomeIcon icon={faKey} /> Lisanslar
+                        </button>
+                    </li>
+                    <li>
+                        <button className="sidebar-button">
+                            <FontAwesomeIcon icon={faKey} /> Lisanslar
+                        </button>
+                    </li>
+                    <li>
+                        <button className="sidebar-button">
+                            <FontAwesomeIcon icon={faKey} /> Lisanslar
+                        </button>
+                    </li>
+                    <li>
+                        <button className="sidebar-button">
+                            <FontAwesomeIcon icon={faKey} /> sdafdsafas
                         </button>
                     </li>
                 </ul>
             </div>
-        </div>     
+        
     )
 }
 

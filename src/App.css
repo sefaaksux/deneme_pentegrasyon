@@ -8,61 +8,7 @@
 }
 
 
-/* Sidebar start */
 
-.sidebar{
-  overflow-y: auto; /* Yalnızca sidebar kaydırılabilir */
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
-  width: 17%;
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.918);
-  /* background-color: rgba(255, 255, 255, 0.966); */
-
-}
-
-.sidebar ul{
-  margin-top: 25px;
-  margin-left: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 1rem;
-  list-style-type: none;
-}
-
-
-.sidebar ul li button{
-  padding: 5px;
-  font-size: 1.1rem;
-  width: 100%;
-  color: rgb(100, 100, 100);
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
-  font-family: 'Arial', sans-serif;
-  background-color: transparent;
-  border: none;
-  color: rgb(100, 100, 100);
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.sidebar ul span{
-  font-size: 0.9rem;
-  color: rgb(116, 116, 116);
-}
-
-.sidebar-button:hover {
-  background-color: rgba(43, 43, 43, 0.1);
-  color: rgb(0, 107, 107); 
-  
-}
-
-.sidebar-button svg {
-  margin-right: 10px;
-}
 
 
 @media screen and (max-width: 1360px) {
@@ -105,22 +51,3 @@
   
 }
 
-@media (max-width: 768px) {
-  .nav-icons {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 90px;
-    right: 10px;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  }
-  .nav-icons.open {
-    display: flex;
-  }
-  .menu-toggle {
-    display: block;
-  }
-
-  
-}

@@ -1,0 +1,82 @@
+/* Sidebar start */
+
+.sidebar{
+    overflow-y: auto; /* Yalnızca sidebar kaydırılabilir */
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(226, 231, 241); */
+    /* background-color: rgba(255, 255, 255, 0.966); */
+    box-shadow: 1px 0 10px black;
+  
+  }
+  
+  .sidebar ul{
+    margin-top: 25px;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+    list-style-type: none;
+    padding-bottom: 23px;
+  }
+  
+  
+  .sidebar ul li button{
+    
+    font-size: 1rem;
+    width: 99%;
+    border-radius: 2%;
+    color: rgb(100, 100, 100);
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 10px;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: transparent;
+    border: none;
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .sidebar ul span{
+    font-size: 0.9rem;
+    color: rgb(116, 116, 116);
+  }
+  
+  .sidebar-button:hover {
+    background-color: rgb(181, 116, 224);
+    color: rgb(255, 255, 255); 
+    
+  }
+  
+  .sidebar-button svg {
+    margin-right: 10px;
+  }
+
+
+  @media screen and (max-width: 1360px) {
+    .sidebar ul{
+      margin-left: -9px;
+    }
+    .sidebar ul li button{
+      padding: 5px;
+      font-size: 1rem;
+      width: 100%;
+      color: rgb(100, 100, 100);
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: 'Arial', sans-serif;
+      background-color: transparent;
+      border: none;
+      color: rgb(100, 100, 100);
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  }
+  
